@@ -5,8 +5,8 @@ import time
 import torch
 import torchaudio
 
-from api import TextToSpeech, MODELS_DIR
-from utils.audio import load_voices
+
+from tortoise.utils.audio import load_voices
 from datetime import datetime
 import time
 import torch
@@ -14,7 +14,7 @@ import torchaudio
 import torch.nn as nn
 import torch.nn.functional as F
 
-from tortoise.api import TextToSpeech
+from tortoise.api import TextToSpeech, MODELS_DIR
 from tortoise.utils.audio import load_audio, load_voice, load_voices
 from tortoise.custom_models import Experimentation
 
@@ -41,8 +41,10 @@ def generate_sentence_and_save(experimentations: Experimentation):
             start_time_loop = time.time()
             print(f"sentence number {i} in progress on {len(exp.texts)}")
 
-            gen = tts.tts(text, voice_samples=voice_samples, conditioning_latents=conditioning_latents,
-                          preset=exp.preset)
+            exp.parameters.update(exp.preset)
+            print(exp.parameters)
+
+            gen = tts.tts(text, voice_samples=voice_samples, conditioning_latents=conditioning_latents, **exp.parameters)
 
             torchaudio.save(os.path.join(output_path, f'{exp.voice_name}_{i}.wav'), gen.squeeze(0).cpu(), 24000)
             end_time_loop = time.time()

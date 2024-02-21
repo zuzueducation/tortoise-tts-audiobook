@@ -7,17 +7,17 @@ if __name__ == "__main__":
 
         Experimentation("_andrew_latheron", story_3, "ultra_fast", tts_init={}, parameters={}),
         Experimentation("_andrew_latheron", story_3, "fast", tts_init={}, parameters={}),
-        Experimentation("_andrew_latheron", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={.2}),
+        Experimentation("_andrew_latheron", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
         Experimentation("_andrew_latheron", story_3, "fast",
-                        tts_init={"kv_cache": True, "half": True, "use_deepspeed": True}, parameters={.2}),
-        Experimentation("_andrew_latheron", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={.2}),
+                        tts_init={"kv_cache": True, "half": True, "use_deepspeed": True}, parameters={"temperature":.2}),
+        Experimentation("_andrew_latheron", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
 
         Experimentation("_chirs_redish", story_3, "ultra_fast", tts_init={}, parameters={}),
         Experimentation("_chirs_redish", story_3, "fast", tts_init={}, parameters={}),
-        Experimentation("_chirs_redish", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={.2}),
+        Experimentation("_chirs_redish", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
         Experimentation("_chirs_redish", story_3, "fast",
-                        tts_init={"kv_cache": True, "half": True, "use_deepspeed": True}, parameters={.2}),
-        Experimentation("_chirs_redish", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={.2}),
+                        tts_init={"kv_cache": True, "half": True, "use_deepspeed": True}, parameters={"temperature":.2}),
+        Experimentation("_chirs_redish", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
 
     ]
 
