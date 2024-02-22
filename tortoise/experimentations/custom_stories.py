@@ -40,5 +40,12 @@ story_4 = [
     '"How exciting! I\'ve always wanted to see what lies beyond this brook. May I join you on your journey?" Finley bubbled eagerly.',
     '"With pleasure, Finley! You can guide us through the waters," Dino said, laughing.']
 
+story_5 = ['Once upon a time there was a magical kingdom nestled next to a dazzling Crystal Forest.',
+           'Puzzled, Sir Glint followed the trail of the dim crystals. He came upon a rocky clearing where to his alarm, he saw a crew of miners hacking away at the crystal trees with pickaxes! They were shoveling armloads of shimmering gems into their bulging sacks.',
+           '"Halt at once!" yelled Sir Glint. "You are harming the Crystal Forest!" But the greedy miners ignored him, focused only on gathering more glittering treasure.',
+           '''Sir Glint realized if he didn't intervene, the miners would plunder the forest until no crystals remained. He boldly drew his sword and commanded, "Stop this destruction! You must cease mining the crystals before it is too late.''',
+           ]
+
+
 
 test = ['Not long into his journey']

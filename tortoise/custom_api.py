@@ -1,22 +1,12 @@
-import argparse
 import os
 import time
-
-import torch
-import torchaudio
-
-
-from tortoise.utils.audio import load_voices
 from datetime import datetime
-import time
-import torch
-import torchaudio
-import torch.nn as nn
-import torch.nn.functional as F
 
-from tortoise.api import TextToSpeech, MODELS_DIR
-from tortoise.utils.audio import load_audio, load_voice, load_voices
+import torchaudio
+
+from tortoise.api import TextToSpeech
 from tortoise.custom_models import Experimentation
+from tortoise.utils.audio import load_voice
 
 
 def generate_sentence_and_save(experimentations: Experimentation):
