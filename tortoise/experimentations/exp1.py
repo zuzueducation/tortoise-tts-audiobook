@@ -1,5 +1,5 @@
 from tortoise.custom_models import Experimentation
-from tortoise.experimentations.custom_stories import *
+from custom_stories import *
 from tortoise.custom_api import generate_sentence_and_save
 
 if __name__ == "__main__":
