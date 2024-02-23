@@ -7,6 +7,7 @@ class Experimentation:
     preset: str
     tts_init: {}
     parameters: {}
+    parameters_preset = {}
 
 
     @staticmethod
@@ -36,14 +37,12 @@ class Experimentation:
 
         self.tts_init = Experimentation.merger_with_check(tts_init_default, self.tts_init)
         self.parameters = Experimentation.merger_with_check(parameters_default, self.parameters)
-        self.preset = presets[self.preset]
+        self.parameters_preset = presets[self.preset]
 
 
     def __str__(self):
             result = f'voice Name: {self.voice_name}\n\n'
-            result += f'preset\n\n'
-            for key, value in self.preset.items():
-                result += f'  {key}: {value}\n'
+            result += f'\npreset: {self.preset}\n'
             result += '\ntext:\n' + '\n'.join(self.texts)
             result += '\n\ntts init:\n'
             for key, value in self.tts_init.items():

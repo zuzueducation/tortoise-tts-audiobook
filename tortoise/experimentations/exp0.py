@@ -9,7 +9,7 @@ if __name__ == "__main__":
         # voices
         Experimentation("train_mouse", story_5, "ultra_fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
 
-        Experimentation("train_mouse", story_5, "ultra_fast", tts_init={"kv_cache": True, "half": True}, parameters={"return_deterministic_state": True}),
+        # Experimentation("train_mouse", story_5, "ultra_fast", tts_init={"kv_cache": True, "half": True}, parameters={"return_deterministic_state": True}),
 
     ]
 
