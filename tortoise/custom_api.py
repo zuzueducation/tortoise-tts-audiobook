@@ -55,6 +55,7 @@ def write_excel_stat_file(voice_name, texts, result_dir, tts_init, preset, all_p
     workbook.save(filename=output_file_name)
 
 def generate_sentence_and_save(experimentations: Experimentation):
+    voice_name = ""
     for i, exp in enumerate(experimentations, start=1):
         start_time_exp = time.time()
         total_experimentations = len(experimentations)
@@ -64,7 +65,9 @@ def generate_sentence_and_save(experimentations: Experimentation):
         formatted_now = now.strftime('%Y%m%d_%H_%M_%S') + '_' + str(int(now.microsecond / 1000)).zfill(3)
 
         list_duration = []
-        voice_samples, conditioning_latents = load_voice(exp.voice_name)
+        if not exp.voice_name == voice_name:
+            voice_samples, conditioning_latents = load_voice(exp.voice_name)
+            voice_name = exp.voice_name
 
         result_dir = f"{formatted_now}_{exp.voice_name}"
         output_path = os.path.join("results", result_dir)
