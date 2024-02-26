@@ -7,9 +7,19 @@ if __name__ == "__main__":
 
 
         # voices
-        Experimentation("train_mouse", story_5, "ultra_fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_adbl_031393", story_db_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_adbl_031393", story_db_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_adbl_031393", story_db_34, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_adbl_031393", story_db_36, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_adbl_031393", story_db_37, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_adbl_031393", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
 
-        # Experimentation("train_mouse", story_5, "ultra_fast", tts_init={"kv_cache": True, "half": True}, parameters={"return_deterministic_state": True}),
+        Experimentation("_andrew_latheron_long", story_db_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_andrew_latheron_long", story_db_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_andrew_latheron_long", story_db_34, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_andrew_latheron_long", story_db_36, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_andrew_latheron_long", story_db_37, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_andrew_latheron_long", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
 
     ]
 

@@ -23,7 +23,7 @@ def write_txt_stat_file(duration_exp, duration_loop, exp, list_duration, output_
 
 
 def write_excel_stat_file(voice_name, texts, result_dir, tts_init, preset, all_params, duration_exp, duration_loop, exp, list_duration, output_path):
-    output_file_name = "results/results.xlsx"
+    output_file_name = os.path.join("results", "results.xlsx")
 
     if os.path.isfile(output_file_name):
         workbook = load_workbook(filename=output_file_name)
