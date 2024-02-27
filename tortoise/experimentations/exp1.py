@@ -7,22 +7,13 @@ if __name__ == "__main__":
 
 
         # voices
-        Experimentation("_andrew_latheron", story_5, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
-        Experimentation("_andrew_latheron", story_5, "fast",
-                        tts_init={"kv_cache": True, "half": True, "use_deepspeed": True}, parameters={"temperature":.2}),
-        # Experimentation("_andrew_latheron", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
-        #
-        # Experimentation("_chirs_redish", story_5, "ultra_fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
-        # Experimentation("_chirs_redish", story_5, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
-        # Experimentation("_chirs_redish", story_5, "fast",
-        #                 tts_init={"kv_cache": True, "half": True, "use_deepspeed": True}, parameters={"temperature":.2}),
-        # Experimentation("_chirs_redish", story_4, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
-        #
-        # # long sample
-        # Experimentation("_andrew_latheron_long", story_5, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
-        #
-        # #very short sample
-        # Experimentation("_andrew_latheron_short", story_5, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperature":.2}),
+        Experimentation("_bk_harp_006115", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_peng_004302", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_podm_004281", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_bk_reco_000784", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_jenna_rose_stein", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_tina_merryman", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_tracey_rose", story_3, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
 
     ]
 
