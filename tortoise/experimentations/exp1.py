@@ -9,7 +9,7 @@ if __name__ == "__main__":
         Experimentation("_amy_faal", story_3_cut_a, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
         Experimentation("_amy_faal", story_3_cut_b, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
 
-        Experimentation("_sally_walker", story_3_cut_a, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
+        Experimentation("_sally_walker", story_3_cut_a, "fast", tts_init={"kv_cache": True, "half": True}, parameters={"temperarure":.05, "top_p": .05}),
         Experimentation("_sally_walker", story_3_cut_b, "fast", tts_init={"kv_cache": True, "half": True}, parameters={}),
 
     ]
